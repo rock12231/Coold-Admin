@@ -20,3 +20,7 @@ Utility Folder
 With Jest - Joy , Express validator
 
 2 page : LOGING , SIGNUP
+
+How to make : server node > express > framework > routing 2 route login signup > DB mongo scema > controler funtion return > business logic in service execution > DB in modale > Middleware data Joy/ request Express validator 
+
+Exachanding in express
