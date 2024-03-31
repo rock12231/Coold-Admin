@@ -24,3 +24,7 @@ With Jest - Joy , Express validator
 How to make : server node > express > framework > routing 2 route login signup > DB mongo scema > controler funtion return > business logic in service execution > DB in modale > Middleware data Joy/ request Express validator 
 
 Exachanding in express
+
+
+- For development: npm run dev
+- For production: npm run build followed by npm run serve
