@@ -28,3 +28,18 @@ Exachanding in express
 
 - For development: npm run dev
 - For production: npm run build followed by npm run serve
+
+
+```
+    npm i @types/express
+    npm i @types/node
+    npm i config
+    npm i cors
+    npm i debug
+    npm i dotenv
+    npm i joi
+    npm i jsonwebtoken
+    npm i morgan
+    npm i sequelize
+    npm i typescript
+```

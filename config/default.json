@@ -1,0 +1,5 @@
+{
+    "name": "Default Server",
+    "type": "node",
+    "host": "localhost"
+}
