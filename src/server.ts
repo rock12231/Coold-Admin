@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import indexRouter from './routes/index';
 import middlewareFunction from './middleware/index';
-// import cors from 'cors';
+import cors from 'cors';
 import connectmongo from './models/index'
 
 dotenv.config();
@@ -46,8 +46,8 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
+if (process.env.NODE_ENV === 'production') {
 connectmongo();
-
-
+}
 
 export default app;
