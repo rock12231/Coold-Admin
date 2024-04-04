@@ -1,26 +1,68 @@
 # Coold-Admin
-1. Node
-2. Express
-3. MongoDB
-4. Elastic
-5. Redius
 
-Security 
-1. Corus
-2. Ratelimit
-3. Express routing
+Coold-Admin is a Node.js application built with Express, MongoDB, Elastic, and Redis. It focuses on security, utilizing Corus, Ratelimit, and Express routing for secure communication.
 
+## Features
 
-MVC - MODEL CONTROLER SERVICE
+- MVC architecture with Model, Controller, and Service layers.
+- Utility folder for environment configuration using .env files (local, test, production).
+- Utilizes Jest for testing along with Joy and Express validator for request validation.
 
-Utility Folder
+## Pages
 
-.env = local, test, production
+- LOGIN
+- SIGNUP
 
-With Jest - Joy , Express validator
+## Setup
 
-2 page : LOGING , SIGNUP
+1. Install dependencies:
 
-How to make : server node > express > framework > routing 2 route login signup > DB mongo scema > controler funtion return > business logic in service execution > DB in modale > Middleware data Joy/ request Express validator 
+```bash
+npm install
+```
 
-Exachanding in express
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+3. For production, build the project and then start the server:
+```bash
+npm run build
+npm run serve
+```
+
+# Dependencies
+
+- Express
+- MongoDB
+- Elastic
+- Redis
+- @types/express
+- @types/node
+- config
+- cors
+- debug
+- dotenv
+- joi
+- jsonwebtoken
+- morgan
+- sequelize
+- typescript
+
+# Usage
+
+- For development: `npm run dev`
+- For production: `npm run build` followed by `npm run serve`
+
+# Security
+
+- Utilizes Corus for CORS protection.
+- Implements Ratelimit for limiting requests.
+- Express routing for secure routing.
+
+# Optimization
+
+- Follows standard practices for Express development.
+- Uses Redis for caching to improve performance.
