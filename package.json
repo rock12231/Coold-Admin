@@ -2,11 +2,10 @@
   "name": "node-admin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
-    "start": "ts-node src/server.ts",
-    "build": "tsc",
-    "serve": "node dist/server.js",
+    "build": "npx tsc",
+    "start": "node src/server.ts",
     "dev": "nodemon src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.12.2",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.9",
     "config": "^3.3.11",
     "cors": "^2.8.5",
     "debug": "^4.3.4",
@@ -24,14 +23,17 @@
     "joi": "^17.12.2",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
-    "sequelize": "^6.37.2",
-    "typescript": "^5.4.3"
+    "sequelize": "^6.37.2"
   },
   "devDependencies": {
     "@types/config": "^3.3.4",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.6",
-    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.12.4",
+    "joi-to-typescript": "^4.13.0",
+    "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0"
+    "typescript": "^5.4.3"
   }
 }

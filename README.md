@@ -43,3 +43,8 @@ Exachanding in express
     npm i sequelize
     npm i typescript
 ```
+
+
+## secure 
+## optimized  
+## standerd

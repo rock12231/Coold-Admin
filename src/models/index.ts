@@ -1,11 +1,9 @@
-// const { Sequelize } = require('sequelize');
+import mongoose, { Connection } from 'mongoose';
 
-// let sequelize;
-// if (process.env.DB_URL) {
-//     sequelize = new Sequelize(process.env.DB_URL);
-// }
-// else {
-//     // sequelize = new Sequelize('sqlite::memory:');
-// }
+const connectmongo =  () => {
+     mongoose.connect('mongodb://localhost:27017/rockdev', {})
+    .then(() => console.log('Connected to MongoDB'))
+    .catch((error: Error) => console.error('Error connecting to MongoDB: ', error));
+    } 
 
-// module.exports = sequelize;
+export default connectmongo;
